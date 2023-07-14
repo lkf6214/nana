@@ -1,10 +1,9 @@
 // import logo from "./logo.svg";
 import "./App.css";
-import MainPage from "./pages/MainPage";
-import SubPage from "./pages/SubPage";
+import MainPage from "./Pages/MainPage";
+import SubPage from "./Pages/SubPage";
 import NotFound from "./components/NotFound";
-import Footer from "./components/Footer";
-import MainSection from "./components/MainSection";
+import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Router, Routes, Route } from "react-router-dom";
 import GlobalStyle from "./components/GlobalStyle";
 
@@ -13,37 +12,15 @@ function App() {
     <>
       <BrowserRouter>
         <GlobalStyle />
-        <MainPage />
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/main" element={<MainPage />} />
+          <Route path="/sub" element={<SubPage />} />
+          <Route path="*" element={<NotFound />}></Route>
+        </Routes>
+        <Footer />
       </BrowserRouter>
-      {/* <BrowserRouter>
-        <Router>
-          <MainSection />
-          <Routes>
-            <Footer>
-              <Route exact path="/" component={MainPage} />
-              <Route path="/subpage" component={SubPage} />
-              <Route component={NotFound} />
-            </Footer>
-          </Routes>
-        </Router>
-      </BrowserRouter> */}
     </>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
   );
 }
 

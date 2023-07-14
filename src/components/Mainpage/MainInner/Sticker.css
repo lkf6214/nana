@@ -1,0 +1,43 @@
+.gallery_card {
+  position: absolute;
+  width: 10%;
+}
+
+.gallery_card .gallery_image {
+  position: absolute;
+  width: 100%;
+}
+
+.gallery_card .gallery_image:nth-child(1) {
+  position: absolute;
+  width: 80%;
+  top: 25vw;
+  left: 20vh;
+}
+
+.gallery_card .gallery_image:nth-child(2) {
+  position: absolute;
+  width: 80%;
+  top: 2rem;
+  left: 35rem;
+}
+
+.gallery_card .gallery_image:nth-child(3) {
+  position: absolute;
+  width: 100%;
+  /* top: 42rem; */
+  top: 600px;
+  left: 5rem;
+}
+
+/* span 이용해서 bottom 기준 */
+.main_img {
+  width: 10%;
+}
+
+.main_img .gallery_image_span {
+  position: absolute;
+  width: 20%;
+  bottom: 0rem;
+  left: 60%;
+}

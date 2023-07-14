@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* width, position 이게 최선인지! */
+.footer {
+  width: 100%;
+  width: calc(100vw - 10px);
+  /* height: 30px; */
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+}
+
+.footer .button_box {
+  display: flex;
+  /* justify-content: space-between; */
+  background-color: yellow;
+  width: 40rem;
+  /* height: 30px; */
+}
+
+.footer .button_box .box {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  /* margin-right: 10%; */
+  border: 1px solid blue;
+  /* align-items: center; */
+}
+
+.footer .box li {
+  display: block;
+  padding: 10px;
+  width: auto;
+  height: 100%;
+}
+/* sns */
+.footer .box li .snsBtn {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer .box li .EmailBtn {
+}
+
+.footer .change .IllustrationBtn:hover {
+  font: green;
+  background-color: #0df046;
+}
+
+.footer .box .VisualDesignBtn:hover {
+  font: red;
+  background-color: #f0510d;
+}
+
+.footer .button_box .sns:nth-child(1):hover {
+  background-color: #0df046;
+}
+
+.footer .box .IllustrationBtn.active {
+  /* color: green;
+  background-color: #0dcaf0; */
+}
+
+.footer .box .VisualDesignBtn.active {
+  /* color: red; */
+}
