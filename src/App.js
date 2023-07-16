@@ -14,7 +14,7 @@ function App() {
         <GlobalStyle />
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="/main" element={<MainPage />} />
+          {/* <Route path="/main" element={<MainPage />} /> */}
           <Route path="/sub" element={<SubPage />} />
           <Route path="*" element={<NotFound />}></Route>
         </Routes>

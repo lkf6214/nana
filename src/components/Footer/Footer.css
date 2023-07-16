@@ -51,13 +51,24 @@
 }
 
 .footer .change .IllustrationBtn:hover {
-  font: green;
-  background-color: #0df046;
+  color: green;
+  /* background-color: #0df046; */
 }
 
-.footer .box .VisualDesignBtn:hover {
-  font: red;
-  background-color: #f0510d;
+#VisualDesignBtn {
+  color: black;
+}
+
+#VisualDesignBtn.active {
+  color: red;
+}
+
+#VisualDesignBtn:hover {
+  color: red;
+}
+
+#VisualDesignBtn:hover > span {
+  text-shadow: red 2px 2px 20px;
 }
 
 .footer .button_box .sns:nth-child(1):hover {

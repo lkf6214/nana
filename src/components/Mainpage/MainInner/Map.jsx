@@ -48,16 +48,48 @@ const ArrayMapExample = () => {
     setSelectedPhoto(null);
   };
 
+  const scrollElement = (event) => {
+    // event.target: "현재 이벤트가 발생한 그 요소"
+    if (event.nativeEvent.wheelDelta > 0) {
+      // console.log("scroll up");
+      // console.dir(event.target.closest(".scroll-container"));
+      event.target.closest(".scroll-container").scrollLeft -= 30;
+    } else {
+      // console.log("scroll down");
+      // console.dir(event.target.closest(".scroll-container"));
+      event.target.closest(".scroll-container").scrollLeft += 30;
+    }
+  };
+
   return (
     <div className="container">
-      <div className="scroll-container">
+      <div
+        className="scroll-container"
+        onWheel={(event) => {
+          if (event.nativeEvent.wheelDelta > 0) {
+            // console.log("scroll up");
+            // console.dir(event.target);
+            event.target.scrollLeft -= 30;
+          } else {
+            // console.log("scroll down");
+            // console.dir(event.target);
+            event.target.scrollLeft += 30;
+          }
+        }}
+      >
         {photos.map((photo, index) => (
           <div
             key={index}
             className="card"
             onClick={() => handleCardClick(index)}
+            onWheel={scrollElement}
           >
-            <img src={photo.src} alt={photo.alt} className="image" />
+            <img
+              src={photo.src}
+              alt={photo.alt}
+              className="image"
+              onWheel={scrollElement}
+            />
             <p>{photo.description}</p>
           </div>
         ))}
