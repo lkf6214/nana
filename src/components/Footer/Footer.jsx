@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Footer.css";
 import { Link, useLocation } from "react-router-dom";
-
 import RollingSlide from "./RollingSlide";
+import Ganzi from "../Ganzi";
 
 export default function Footer() {
   // 새로고침시 유지
@@ -28,8 +28,10 @@ export default function Footer() {
     // 페이지 로드 시 activeTab 값 설정
     if (location.pathname === "/") {
       setActiveTab("fontColorChange");
-    } else if (location.pathname === "/sub") {
+    } else if (location.pathname === "/visualDesign") {
       setActiveTab("fontColorChange1");
+    } else {
+      setActiveTab("fontColorChange2");
     }
   }, [location.pathname]);
 
@@ -42,36 +44,46 @@ export default function Footer() {
       <div className="footer">
         {/* Illustration, Visual Design */}
         <div className="button_box">
-          <ul className="box change">
+          <ul className="box page">
+            {/* 메인 페이지*/}
             <li className="IllustrationBtn">
               <Link
                 to="/"
                 onClick={() => handleTabClick("fontColorChange")}
                 style={{
-                  color: activeTab === "fontColorChange" ? "green" : "black",
+                  color: activeTab === "fontColorChange2" ? "white" : "",
                   textShadow:
                     activeTab === "fontColorChange"
-                      ? "2px 2px 20px rgb(0, 0, 0, 0.7)"
+                      ? // ? "2px 2px 20px rgb(0, 0, 0, 0.7)"
+                        "2px 2px 20px green"
                       : "none",
                 }}
+                className={
+                  location.pathname === "/" || // url 경로가 /sub 라면 active 클래스 추가
+                  activeTab === "fontColorChange" // active state 값이 fontColorChange1라면 active 클래스 추가
+                    ? "active"
+                    : ""
+                }
                 id="IllustrationBtn"
               >
-                Illustration
+                <span>Illustration</span>
               </Link>
             </li>
+
+            {/* visualDesign 페이지*/}
             <li className="VisualDesignBtn">
               <Link
-                to="/sub"
+                to="/visualDesign"
                 onClick={() => handleTabClick("fontColorChange1")}
                 style={{
-                  // color: activeTab === "fontColorChange1" ? "red" : "black",
+                  color: activeTab === "fontColorChange2" ? "white" : "",
                   textShadow:
                     activeTab === "fontColorChange1"
                       ? "2px 2px 20px red"
                       : "none",
                 }}
                 className={
-                  location.pathname === "/sub" || // url 경로가 /sub 라면 active 클래스 추가
+                  location.pathname === "/visualDesign" || // url 경로가 /sub 라면 active 클래스 추가
                   activeTab === "fontColorChange1" // active state 값이 fontColorChange1라면 active 클래스 추가
                     ? "active"
                     : ""
@@ -81,13 +93,37 @@ export default function Footer() {
                 <span>Visual Design</span>
               </Link>
             </li>
+
+            {/* neuronet 페이지*/}
+            <li className="NeuroNetBtn">
+              <Link
+                to="/3DService"
+                onClick={() => handleTabClick("fontColorChange2")}
+                style={{
+                  // color: activeTab === "fontColorChange1" ? "red" : "black",
+                  textShadow:
+                    activeTab === "fontColorChange2"
+                      ? "2px 2px 20px blue"
+                      : "none",
+                }}
+                className={
+                  location.pathname === "/3DService" || // url 경로가 /neuronet 라면 active 클래스 추가
+                  activeTab === "fontColorChange2" // active state 값이 fontColorChange1라면 active 클래스 추가
+                    ? "active"
+                    : ""
+                }
+                id="NeuroNetBtn"
+              >
+                <span>3D Service</span>
+              </Link>
+            </li>
           </ul>
 
           {/* Instagram, mail */}
           <ul className="box sns">
             <li>
               <Link
-                to="https://instagram.com/uuuunana?igshid=MTI1ZDU5ODQ3Yw=="
+                to="https://instagram.com/__neuronet?igshid=MmU2YjMzNjRlOQ=="
                 target="_blank"
                 className="snsBtn instagramBtn"
               >
@@ -103,7 +139,17 @@ export default function Footer() {
         </div>
 
         {/* slide */}
-        <RollingSlide items={[text, text]} />
+        <div
+          className="rolling_slide"
+          style={{
+            color: activeTab === "fontColorChange2" ? "white" : "black",
+          }}
+        >
+          <RollingSlide
+            textColor={activeTab === "fontColorChange2" ? "shadowBlack" : ""}
+            items={[text, text, text]}
+          />
+        </div>
       </div>
     </>
   );

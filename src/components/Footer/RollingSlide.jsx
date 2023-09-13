@@ -2,14 +2,16 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Rolling.css";
 
-export default function RollingSlide({ items }) {
+export default function RollingSlide({ items, textColor }) {
   return (
     <>
-      <div className="flow-container">
-        <div className="flow">
-          {items.map((item, index) => (
-            <div key={index}>{item}</div>
-          ))}
+      <div className="flow-wrap">
+        <div className={`flow-container ${textColor}`}>
+          <div className="flow">
+            {items.map((item, index) => (
+              <div key={index}>{item}</div>
+            ))}
+          </div>
         </div>
       </div>
     </>

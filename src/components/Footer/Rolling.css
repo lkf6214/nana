@@ -1,15 +1,33 @@
+.flow-wrap {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .flow-wrap {
+    position: relative;
+    max-width: 1000px;
+    width: calc(100vw - 10px);
+  }
+}
+
 .flow-container {
-  width: 300px;
-  /* height: 40px; */
+  /* width: 300px; */
+  height: 100%;
 }
 
 .flow-container .flow {
   /* width: 300px; */
   height: 100%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   white-space: nowrap;
-  background-color: aliceblue;
+  /* background-color: rgb(255, 255, 255); */
+  display: flex;
+  align-items: center;
+
   /* 
     white-space 속성
     글자를 포함하는 요소의 가로넓이 이상의 text를 가지고 있을 때, text 제어
@@ -31,8 +49,8 @@
   z-index: 1;
   background: linear-gradient(
     to right,
-    rgba(170, 0, 0, 1) 10%,
-    rgba(170, 0, 0, 0.75) 51%,
+    rgb(255, 255, 255) 10%,
+    rgba(255, 255, 255, 0.75) 51%,
     rgba(170, 0, 0, 0) 100%
   );
 }
@@ -48,14 +66,55 @@
   background: linear-gradient(
     to right,
     rgba(170, 0, 0, 0) 0%,
-    rgba(170, 0, 0, 0.75) 51%,
-    rgba(170, 0, 0, 1) 100%
+    rgba(255, 255, 255, 0.75) 51%,
+    rgb(255, 255, 255) 100%
+  );
+}
+/* 
+.flow-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 10%,
+    rgba(255, 255, 255, 0.75) 51%,
+    rgba(170, 0, 0, 0) 100%
+  );
+} */
+
+/* .flow-container.shadowNone::after {
+  background: none;
+}
+
+.flow-container.shadowNone::after {
+  background: none;
+} */
+
+.flow-container.shadowBlack::before {
+  background: linear-gradient(
+    to right,
+    rgb(0, 0, 0) 10%,
+    rgba(0, 0, 0, 0.75) 51%,
+    rgba(170, 0, 0, 0) 100%
+  );
+}
+.flow-container.shadowBlack::after {
+  background: linear-gradient(
+    to right,
+    rgba(170, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.75) 51%,
+    rgb(0, 0, 0) 100%
   );
 }
 
 .flow div {
   animation: loop 10s linear infinite;
-  line-height: 40px;
+  line-height: 35px;
   padding-right: 1rem;
   /* 박스 높이 키워줌 */
 }

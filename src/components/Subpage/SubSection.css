@@ -17,6 +17,7 @@ body {
   box-shadow: inset 0 50px 50px -30px rgb(255, 40, 40);
   /* background-color: rgb(255, 255, 255); */
   background-image: url("./img/bg2.png");
-  background-repeat: repeat;
-  background-size: 100px 100px;
+  background-image: url("./img/VisualDesign_bg.png");
+  /* background-repeat: repeat; */
+  background-size: cover;
 }

@@ -1,7 +1,8 @@
 // import logo from "./logo.svg";
 import "./App.css";
 import MainPage from "./Pages/MainPage";
-import SubPage from "./Pages/SubPage";
+import VisualDesign from "./Pages/VisualDesign";
+import Neuronet from "./Pages/Neuronet";
 import NotFound from "./components/NotFound";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Router, Routes, Route } from "react-router-dom";
@@ -14,9 +15,9 @@ function App() {
         <GlobalStyle />
         <Routes>
           <Route path="/" element={<MainPage />} />
-          {/* <Route path="/main" element={<MainPage />} /> */}
-          <Route path="/sub" element={<SubPage />} />
-          <Route path="*" element={<NotFound />}></Route>
+          <Route path="/visualDesign" element={<VisualDesign />} />
+          <Route path="/3DService" element={<Neuronet />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>

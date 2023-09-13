@@ -1,0 +1,36 @@
+.fixComment {
+  width: 80vw;
+  max-width: 500px;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1;
+  font-size: 2rem;
+  /* border: 1px solid red; */
+}
+
+.black {
+  color: black;
+  text-shadow: 2px 2px 20px rgb(0, 0, 0, 0.7);
+}
+
+.white {
+  color: white;
+  text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.9);
+}
+
+.fixComment .fixComment_header {
+  font-size: 3rem;
+  vertical-align: bottom;
+}
+
+@media screen and (max-width: 1000px) {
+  .fixComment {
+    max-width: 300px;
+    font-size: 1.4rem;
+  }
+
+  .fixComment .fixComment_header {
+    font-size: 2.5rem;
+  }
+}
