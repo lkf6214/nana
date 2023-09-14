@@ -10,7 +10,11 @@ export default function Ganzi({ ganzi }) {
   return (
     <>
       <div className={`ganziContainer ${loading ? "" : "off"}`}>
-        <img className="ganzi" src={`../img${ganzi}.png`} alt="ganzi" />
+        <img
+          className="ganzi"
+          src={process.env.PUBLIC_URL + `/img${ganzi}.png`}
+          alt="ganzi"
+        />
       </div>
     </>
   );

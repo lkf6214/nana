@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
         <GlobalStyle />
         <Routes>
-          <Route path="/" element={<MainPage />} />
+          <Route path="/nana" element={<MainPage />} />
           <Route path="/visualDesign" element={<VisualDesign />} />
           <Route path="/3DService" element={<Neuronet />} />
           <Route path="*" element={<NotFound />} />

@@ -26,7 +26,7 @@ export default function Footer() {
 
   useEffect(() => {
     // 페이지 로드 시 activeTab 값 설정
-    if (location.pathname === "/") {
+    if (location.pathname === "/nana") {
       setActiveTab("fontColorChange");
     } else if (location.pathname === "/visualDesign") {
       setActiveTab("fontColorChange1");
@@ -55,7 +55,7 @@ export default function Footer() {
             {/* 메인 페이지*/}
             <li className="IllustrationBtn">
               <Link
-                to="/"
+                to="/nana"
                 onClick={() => handleTabClick("fontColorChange")}
                 style={{
                   color: activeTab === "fontColorChange2" ? "white" : "",
@@ -66,7 +66,7 @@ export default function Footer() {
                       : "none",
                 }}
                 className={
-                  location.pathname === "/" || // url 경로가 /sub 라면 active 클래스 추가
+                  location.pathname === "/nana" || // url 경로가 /sub 라면 active 클래스 추가
                   activeTab === "fontColorChange" // active state 값이 fontColorChange1라면 active 클래스 추가
                     ? "active"
                     : ""
