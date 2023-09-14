@@ -41,6 +41,5 @@
   },
   "devDependencies": {
     "styled-components": "^5.3.10"
-  },
-  "homepage": "https://lkf6214.github.io/nana/"
+  }
 }
