@@ -58,7 +58,7 @@ const ArrayMap = ({ photos, descriptionColor = "black" }) => {
                 // onWheel={scrollElement}
               />
             ) : (
-              <video width={"500px"} loop muted autoPlay>
+              <video width={"500px"} loop muted autoPlay className="image">
                 <source src={photo.src} type="video/mp4"></source>
               </video>
             )}
@@ -89,7 +89,12 @@ const ArrayMap = ({ photos, descriptionColor = "black" }) => {
                 // onWheel={scrollElement}
               />
             ) : (
-              <video width={"500px"} loop muted autoPlay>
+              <video
+                width={"500px"}
+                loop
+                autoPlay
+                // className="modal-image"
+              >
                 <source
                   src={photos[selectedPhoto].src}
                   type="video/mp4"

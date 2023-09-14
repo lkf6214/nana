@@ -39,6 +39,13 @@ export default function Footer() {
     setActiveTab(tab);
   };
 
+  // let textColor = "";
+  // if (activeTab === "fontColorChange2") {
+  //   textColor = "shadowBlack";
+  // } else if (activeTab === "fontColorChange1") {
+  //   textColor = "shadowNone";
+  // }
+
   return (
     <>
       <div className="footer">
@@ -146,7 +153,15 @@ export default function Footer() {
           }}
         >
           <RollingSlide
-            textColor={activeTab === "fontColorChange2" ? "shadowBlack" : ""}
+            // textColor={activeTab === "fontColorChange2" ? "shadowBlack" : ""}
+            textColor={
+              activeTab === "fontColorChange2"
+                ? "shadowBlack"
+                : activeTab === "fontColorChange1"
+                ? "shadowNone"
+                : ""
+            }
+            // textColor={textColor}
             items={[text, text, text]}
           />
         </div>

@@ -34,8 +34,6 @@
     - normal (default) :부모 요소의 가로만큼 텍스트 차지, 그 이후로는 줄바꿈
     - nowrap : 텍스트가 넘쳐도 줄바꿈 무시하고 가로로 배치
     */
-
-  /* 주석 해제하고 보기 */
   overflow: hidden;
 }
 
@@ -70,29 +68,23 @@
     rgb(255, 255, 255) 100%
   );
 }
-/* 
-.flow-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 100%;
-  z-index: 1;
-  background: linear-gradient(
-    to right,
-    rgb(255, 255, 255) 10%,
-    rgba(255, 255, 255, 0.75) 51%,
-    rgba(170, 0, 0, 0) 100%
-  );
-} */
 
-/* .flow-container.shadowNone::after {
+.flow-container.shadowNone::before {
   background: none;
 }
 
 .flow-container.shadowNone::after {
   background: none;
+}
+
+/* .flow-container.shadowBlur::before {
+  background: none;
+  filter: blur(10px);
+}
+
+.flow-container.shadowBlur::after {
+  background: none;
+  filter: blur(10px);
 } */
 
 .flow-container.shadowBlack::before {
@@ -113,7 +105,7 @@
 }
 
 .flow div {
-  animation: loop 10s linear infinite;
+  animation: loop 5s linear infinite;
   line-height: 35px;
   padding-right: 1rem;
   /* 박스 높이 키워줌 */
