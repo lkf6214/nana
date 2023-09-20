@@ -50,7 +50,7 @@ const ArrayMap = ({ photos, descriptionColor = "black" }) => {
           >
             {/* img onWheel={scrollElement} 소스 확인 필요 */}
 
-            {photo.src.indexOf(".mp4") <= -1 ? (
+            {photo.src.toLowerCase().indexOf(".mp4") <= -1 ? (
               <img
                 src={photo.src}
                 alt={photo.alt}
