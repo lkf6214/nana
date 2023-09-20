@@ -140,7 +140,7 @@ export default function Neuronet() {
           />
           <ArrayMap photos={photos} descriptionColor="white" />
           <div className="universe-container">
-            <video className="universe" loop muted autoPlay>
+            <video className="universe" loop muted autoPlay playsInline>
               <source
                 src={process.env.PUBLIC_URL + "/img/Neuronet/Neuronet_bg.mp4"}
                 type="video/mp4"
