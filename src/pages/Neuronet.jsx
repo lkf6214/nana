@@ -19,7 +19,7 @@ export default function Neuronet() {
     {
       src: process.env.PUBLIC_URL + "/img/Neuronet/02.png",
       alt: "Neuronet 02",
-      description: "Personal Work : Fashion Character Drawing Style Ver.01 🌌",
+      description: "Personal Work : Fashion Character Drawing Style Ver.01 🌌",
     },
     {
       src: process.env.PUBLIC_URL + "/img/Neuronet/03.mp4",
@@ -27,7 +27,7 @@ export default function Neuronet() {
       description: "Personal Work : BOOOOOOOOOOOOM💣💥💥💥💥💥💥💥💥💥💥💥💥",
     },
     {
-      src: process.env.PUBLIC_URL + "/img/Neuronet/04.mp4",
+      src: process.env.PUBLIC_URL + "/img/Neuronet/04.MP4",
       alt: "Neuronet 04",
       description: "Personal Work : On The Way Home From Work In The Rain 🌧",
     },
@@ -87,12 +87,12 @@ export default function Neuronet() {
         "Personal Work : Fashion Character Drawing Style Ver.03 🧡💛",
     },
     {
-      src: process.env.PUBLIC_URL + "/img/Neuronet/15.mp4",
+      src: process.env.PUBLIC_URL + "/img/Neuronet/15.MP4",
       alt: "Neuronet 15",
       description: "Personal Work : (((o(・ω・o) (o・ω・)o)))",
     },
     {
-      src: process.env.PUBLIC_URL + "/img/Neuronet/16.mp4",
+      src: process.env.PUBLIC_URL + "/img/Neuronet/16.MP4",
       alt: "Neuronet 16",
       description:
         "Hyundai Motors Digital Art Contest : Freedom Of Movement 💫",

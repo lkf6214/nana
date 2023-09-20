@@ -5,7 +5,7 @@ import VisualDesign from "./Pages/VisualDesign";
 import Neuronet from "./Pages/Neuronet";
 import NotFound from "./components/NotFound";
 import Footer from "./components/Footer/Footer";
-import { BrowserRouter, Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import GlobalStyle from "./components/GlobalStyle";
 
 function App() {

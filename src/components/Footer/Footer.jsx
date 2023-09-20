@@ -81,7 +81,7 @@ export default function Footer() {
             {/* visualDesign 페이지*/}
             <li className="VisualDesignBtn">
               <Link
-                to="/visualDesign"
+                to="visualDesign"
                 onClick={() => handleTabClick("fontColorChange1")}
                 style={{
                   color: activeTab === "fontColorChange2" ? "white" : "",
@@ -105,7 +105,7 @@ export default function Footer() {
             {/* neuronet 페이지*/}
             <li className="NeuroNetBtn">
               <Link
-                to="/3DService"
+                to="3DService"
                 onClick={() => handleTabClick("fontColorChange2")}
                 style={{
                   // color: activeTab === "fontColorChange1" ? "red" : "black",
