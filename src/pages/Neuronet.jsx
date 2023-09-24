@@ -27,8 +27,8 @@ export default function Neuronet() {
       description: "Personal Work : BOOOOOOOOOOOOM💣💥💥💥💥💥💥💥💥💥💥💥💥",
     },
     {
-      // src: process.env.PUBLIC_URL + "/img/Neuronet/04.MP4",
-      src: "https://lkf6214.github.io/nana/img/Neuronet/04.mp4",
+      src: process.env.PUBLIC_URL + "/img/Neuronet/04.mp4",
+      // src: "https://lkf6214.github.io/nana/img/Neuronet/04.mp4",
       alt: "Neuronet 04",
       description: "Personal Work : On The Way Home From Work In The Rain 🌧",
     },

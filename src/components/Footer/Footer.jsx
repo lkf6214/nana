@@ -9,9 +9,9 @@ export default function Footer() {
   const location = useLocation();
 
   // 이메일 js
-  const email = "lkf6214@naver.com";
-  const subject = "안녕하세요 nana님";
-  const body = "외주 문의합니다.";
+  const email = "neuronet999@gmail.com";
+  const subject = "";
+  const body = "";
 
   const handleEmailClick = () => {
     window.open(
@@ -54,6 +54,54 @@ export default function Footer() {
         <div className="button_box">
           <ul className="box page">
             {/* 메인 페이지*/}
+            {/* neuronet 페이지*/}
+            <li className="NeuroNetBtn">
+              <Link
+                to="3DService"
+                onClick={() => handleTabClick("fontColorChange2")}
+                style={{
+                  // color: activeTab === "fontColorChange1" ? "red" : "black",
+                  textShadow:
+                    activeTab === "fontColorChange2"
+                      ? "2px 2px 20px blue"
+                      : "none",
+                }}
+                className={
+                  location.pathname === "nana/3DService" || // url 경로가 /neuronet 라면 active 클래스 추가
+                  activeTab === "fontColorChange2" // active state 값이 fontColorChange1라면 active 클래스 추가
+                    ? "active"
+                    : ""
+                }
+                id="NeuroNetBtn"
+              >
+                <span>3D Service</span>
+              </Link>
+            </li>
+
+            {/* visualDesign 페이지*/}
+            <li className="VisualDesignBtn">
+              <Link
+                to="visualDesign"
+                onClick={() => handleTabClick("fontColorChange1")}
+                style={{
+                  color: activeTab === "fontColorChange2" ? "white" : "",
+                  textShadow:
+                    activeTab === "fontColorChange1"
+                      ? "2px 2px 20px red"
+                      : "none",
+                }}
+                className={
+                  location.pathname === "/nana/visualDesign" || // url 경로가 /sub 라면 active 클래스 추가
+                  activeTab === "fontColorChange1" // active state 값이 fontColorChange1라면 active 클래스 추가
+                    ? "active"
+                    : ""
+                }
+                id="VisualDesignBtn"
+              >
+                <span>Visual Design</span>
+              </Link>
+            </li>
+
             <li className="IllustrationBtn">
               <Link
                 to="/nana"
@@ -75,54 +123,6 @@ export default function Footer() {
                 id="IllustrationBtn"
               >
                 <span>Illustration</span>
-              </Link>
-            </li>
-
-            {/* visualDesign 페이지*/}
-            <li className="VisualDesignBtn">
-              <Link
-                to="visualDesign"
-                onClick={() => handleTabClick("fontColorChange1")}
-                style={{
-                  color: activeTab === "fontColorChange2" ? "white" : "",
-                  textShadow:
-                    activeTab === "fontColorChange1"
-                      ? "2px 2px 20px red"
-                      : "none",
-                }}
-                className={
-                  location.pathname === "/visualDesign" || // url 경로가 /sub 라면 active 클래스 추가
-                  activeTab === "fontColorChange1" // active state 값이 fontColorChange1라면 active 클래스 추가
-                    ? "active"
-                    : ""
-                }
-                id="VisualDesignBtn"
-              >
-                <span>Visual Design</span>
-              </Link>
-            </li>
-
-            {/* neuronet 페이지*/}
-            <li className="NeuroNetBtn">
-              <Link
-                to="3DService"
-                onClick={() => handleTabClick("fontColorChange2")}
-                style={{
-                  // color: activeTab === "fontColorChange1" ? "red" : "black",
-                  textShadow:
-                    activeTab === "fontColorChange2"
-                      ? "2px 2px 20px blue"
-                      : "none",
-                }}
-                className={
-                  location.pathname === "/3DService" || // url 경로가 /neuronet 라면 active 클래스 추가
-                  activeTab === "fontColorChange2" // active state 값이 fontColorChange1라면 active 클래스 추가
-                    ? "active"
-                    : ""
-                }
-                id="NeuroNetBtn"
-              >
-                <span>3D Service</span>
               </Link>
             </li>
           </ul>

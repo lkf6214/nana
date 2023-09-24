@@ -65,10 +65,11 @@ const ArrayMap = ({ photos, descriptionColor = "black" }) => {
 
             <p className={`${descriptionColor}`}>
               {photo.description.split(":").map((v, i) => {
-                if (i === 0)
+                if (i === 1)
                   return (
                     <>
-                      {v}:<br />
+                      :<br />
+                      {v}
                     </>
                   );
                 else return v;
