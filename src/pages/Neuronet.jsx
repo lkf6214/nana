@@ -88,14 +88,14 @@ export default function Neuronet() {
         "Personal Work : Fashion Character Drawing Style Ver.03 🧡💛",
     },
     {
-      src: "https://lkf6214.github.io/nana/img/Neuronet/15.MP4",
+      src: process.env.PUBLIC_URL + "/img/Neuronet/15.MP4",
       // src: process.env.PUBLIC_URL + "/img/Neuronet/15.mp4",
       alt: "Neuronet 15",
       description: "Personal Work : (((o(・ω・o) (o・ω・)o)))",
     },
     {
       // src: process.env.PUBLIC_URL + "/img/Neuronet/16.mp4",
-      src: "https://lkf6214.github.io/nana/img/Neuronet/16.MP4",
+      src: process.env.PUBLIC_URL + "/img/Neuronet/16.MP4",
       alt: "Neuronet 16",
       description:
         "Hyundai Motors Digital Art Contest : Freedom Of Movement 💫",
