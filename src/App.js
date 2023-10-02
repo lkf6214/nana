@@ -5,9 +5,9 @@ import NotFound from "./components/NotFound";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import GlobalStyle from "./components/GlobalStyle";
-import MainPage from "./Pages/MainPage";
-import VisualDesign from "./Pages/VisualDesign";
-import Neuronet from "./Pages/Neuronet";
+import Neuronet from "./pages/Neuronet";
+import VisualDesign from "./pages/VisualDesign";
+import MainPage from "./pages/MainPage";
 
 function App() {
   return (
