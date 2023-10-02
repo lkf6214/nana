@@ -275,11 +275,13 @@ export default function SubSection() {
       description: "Lolyloveloly Logo : CI Logo Graphic Design 🧚❣❤🖤",
     },
   ];
+
+  const fixCommentHeaderFont = "visualDesign";
   const headingComment = "Nan";
   const comment =
     "design page provides visual services. We are working on various works such as fashion    branding and 3D animation, and we pursue a trendy and fun way of working. If you want fresh and direction, please connect";
 
-  const ganzi = "/VisualDesign/_순서";
+  const ganzi = "ganzi";
 
   const [loading, setLoading] = useState(true);
 
@@ -293,7 +295,11 @@ export default function SubSection() {
       {loading ? null : (
         <section className="section_sub">
           {/* <Footer /> */}
-          <Comment comment={comment} headingComment={headingComment} />
+          <Comment
+            comment={comment}
+            headingComment={headingComment}
+            fixCommentHeaderFont={fixCommentHeaderFont}
+          />
           <ArrayMap photos={photos} />
         </section>
       )}

@@ -21,7 +21,8 @@
 
 .fixComment .fixComment_header {
   font-size: 3rem;
-  vertical-align: bottom;
+  /* vertical-align: bottom; */
+  padding-right: 8px;
 }
 
 @media screen and (max-width: 1000px) {

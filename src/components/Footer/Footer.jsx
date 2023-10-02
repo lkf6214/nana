@@ -27,7 +27,7 @@ export default function Footer() {
   useEffect(() => {
     console.log(location.pathname);
     // 페이지 로드 시 activeTab 값 설정
-    if (location.pathname === "/nana") {
+    if (location.pathname === "/" || location.pathname === "/3DService") {
       setActiveTab("fontColorChange");
     } else if (location.pathname === "/visualDesign") {
       setActiveTab("fontColorChange1");
@@ -57,18 +57,19 @@ export default function Footer() {
             {/* neuronet 페이지*/}
             <li className="NeuroNetBtn">
               <Link
+                // to="/"
                 to="3DService"
-                onClick={() => handleTabClick("fontColorChange2")}
+                onClick={() => handleTabClick("fontColorChange")}
                 style={{
-                  // color: activeTab === "fontColorChange1" ? "red" : "black",
+                  color: activeTab === "fontColorChange" ? "aqua" : "black",
                   textShadow:
-                    activeTab === "fontColorChange2"
-                      ? "2px 2px 20px blue"
+                    activeTab === "fontColorChange"
+                      ? "2px 2px 20px aqua"
                       : "none",
                 }}
                 className={
-                  location.pathname === "nana/3DService" || // url 경로가 /neuronet 라면 active 클래스 추가
-                  activeTab === "fontColorChange2" // active state 값이 fontColorChange1라면 active 클래스 추가
+                  location.pathname === "3DService" || // url 경로가 /neuronet 라면 active 클래스 추가
+                  activeTab === "fontColorChange" // active state 값이 fontColorChange1라면 active 클래스 추가
                     ? "active"
                     : ""
                 }
@@ -84,7 +85,12 @@ export default function Footer() {
                 to="visualDesign"
                 onClick={() => handleTabClick("fontColorChange1")}
                 style={{
-                  color: activeTab === "fontColorChange2" ? "white" : "",
+                  color:
+                    activeTab === "fontColorChange1"
+                      ? "red"
+                      : activeTab === "fontColorChange"
+                      ? "white"
+                      : "",
                   textShadow:
                     activeTab === "fontColorChange1"
                       ? "2px 2px 20px red"
@@ -104,19 +110,24 @@ export default function Footer() {
 
             <li className="IllustrationBtn">
               <Link
-                to="/nana"
-                onClick={() => handleTabClick("fontColorChange")}
+                to="Illustration"
+                onClick={() => handleTabClick("fontColorChange2")}
                 style={{
-                  color: activeTab === "fontColorChange2" ? "white" : "",
+                  color:
+                    activeTab === "fontColorChange2"
+                      ? "rgba(61, 255, 40)"
+                      : activeTab === "fontColorChange"
+                      ? "white"
+                      : "",
                   textShadow:
-                    activeTab === "fontColorChange"
+                    activeTab === "fontColorChange2"
                       ? // ? "2px 2px 20px rgb(0, 0, 0, 0.7)"
-                        "2px 2px 20px green"
+                        "2px 2px 20px rgba(61, 255, 40)"
                       : "none",
                 }}
                 className={
-                  location.pathname === "/nana" || // url 경로가 /sub 라면 active 클래스 추가
-                  activeTab === "fontColorChange" // active state 값이 fontColorChange1라면 active 클래스 추가
+                  location.pathname === "/nana/Illustration" || // url 경로가 /sub 라면 active 클래스 추가
+                  activeTab === "fontColorChange2" // active state 값이 fontColorChange1라면 active 클래스 추가
                     ? "active"
                     : ""
                 }
@@ -150,13 +161,13 @@ export default function Footer() {
         <div
           className="rolling_slide"
           style={{
-            color: activeTab === "fontColorChange2" ? "white" : "black",
+            color: activeTab === "fontColorChange" ? "white" : "black",
           }}
         >
           <RollingSlide
             // textColor={activeTab === "fontColorChange2" ? "shadowBlack" : ""}
             textColor={
-              activeTab === "fontColorChange2"
+              activeTab === "fontColorChange"
                 ? "shadowBlack"
                 : activeTab === "fontColorChange1"
                 ? "shadowNone"

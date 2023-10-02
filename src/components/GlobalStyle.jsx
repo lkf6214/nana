@@ -30,6 +30,8 @@ export default function GlobalStyle() {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      font-family: HelveticaNeueLTStd;
+      font-size: 16px
     }
 
     ul,
@@ -40,6 +42,7 @@ export default function GlobalStyle() {
 
     a {
       text-decoration: none;
+      /* font-family: HelveticaNeueLTStd */
     }
 
 
@@ -47,6 +50,14 @@ export default function GlobalStyle() {
   font-family: Kismet-Regular;
 }
 
+.fixComment_header.visualDesign {
+  font-family: ITCEDSCR;
+}
+
+.fixComment_header.illustration {
+  font-family: Motorcycle-Bold;
+
+}
   `;
 
   return (

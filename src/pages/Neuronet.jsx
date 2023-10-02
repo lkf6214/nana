@@ -120,9 +120,9 @@ export default function Neuronet() {
   ];
   const headingComment = "Neuronet";
   const comment =
-    "design page provides visual services. We are working on various works such as fashion branding and 3D animation, and we pursue a trendy and fun way of working. If you want fresh and direction, please connect!!!";
+    "design page provides visual services. We are working on various works such as fashion branding and 3D animation, and we pursue a trendy and fun way of working. If you want fresh and direction, please connect";
 
-  const ganzi = "/Neuronet/_순서";
+  const ganzi = "ganzi";
 
   const [loading, setLoading] = useState(true);
 

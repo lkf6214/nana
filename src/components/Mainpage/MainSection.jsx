@@ -175,12 +175,12 @@ export default function MainSections() {
       description: "Nike boy 👟",
     },
   ];
-
+  const fixCommentHeaderFont = "illustration";
   const headingComment = "Nan";
   const comment =
     "illustration page provides art services. It covers various fields such as (illustrations, posters and characters). We want to convey emotions and stories through expressiveness. I hope it will be a illustration that can add great value to your project.";
 
-  const ganzi = "/Illustration/_순서";
+  const ganzi = "ganzi";
 
   const [loading, setLoading] = useState(true);
 
@@ -194,7 +194,11 @@ export default function MainSections() {
 
       {loading ? null : (
         <section>
-          <Comment comment={comment} headingComment={headingComment} />
+          <Comment
+            comment={comment}
+            headingComment={headingComment}
+            fixCommentHeaderFont={fixCommentHeaderFont}
+          />
           <ArrayMap photos={photos} />
 
           {/* <Picture /> */}
