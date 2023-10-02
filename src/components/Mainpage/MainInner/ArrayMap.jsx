@@ -82,7 +82,7 @@ const ArrayMap = ({ photos, descriptionColor = "black" }) => {
       {selectedPhoto !== null && (
         <div className="modal-overlay" onClick={handModalClose}>
           <div className="modal-content">
-            {photos[selectedPhoto].src.indexOf(".mp4") <= -1 ? (
+            {photos[selectedPhoto].src.toLowerCase().indexOf(".mp4") <= -1 ? (
               <img
                 src={photos[selectedPhoto].src}
                 alt={photos[selectedPhoto].alt}
