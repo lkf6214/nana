@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.904fb81e.css",
+    "main.css": "/static/css/main.03c7bf1f.css",
     "main.js": "/static/js/main.b5fede75.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/bg2.png": "/static/media/bg2.9fc61068b55fd315d6e2.png",
@@ -10,12 +10,12 @@
     "static/media/Motorcycle-Bold.woff": "/static/media/Motorcycle-Bold.2a9651f555242049e756.woff",
     "static/media/HelveticaNeueLTStd-Roman.woff": "/static/media/HelveticaNeueLTStd-Roman.6e3d231f6930eafba3b0.woff",
     "index.html": "/index.html",
-    "main.904fb81e.css.map": "/static/css/main.904fb81e.css.map",
+    "main.03c7bf1f.css.map": "/static/css/main.03c7bf1f.css.map",
     "main.b5fede75.js.map": "/static/js/main.b5fede75.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.904fb81e.css",
+    "static/css/main.03c7bf1f.css",
     "static/js/main.b5fede75.js"
   ]
 }
