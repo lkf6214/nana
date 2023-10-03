@@ -25,7 +25,7 @@ export default function Footer() {
   const [activeTab, setActiveTab] = useState("");
 
   useEffect(() => {
-    console.log(location.pathname);
+    // console.log(location.pathname);
     // 페이지 로드 시 activeTab 값 설정
     if (location.pathname === "/" || location.pathname === "/3DService") {
       setActiveTab("fontColorChange");
