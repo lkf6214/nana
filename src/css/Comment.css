@@ -28,13 +28,13 @@
 @media screen and (max-width: 1000px) {
   .fixComment {
     max-width: 300px;
-    /* font-size: 1.4rem; */
-    font-size: 3vw;
+    font-size: 1.2rem;
+    /* font-size: 4vw; */
   }
 
   .fixComment .fixComment_header {
-    /* font-size: 2.5rem; */
-    font-size: 5.5vw;
+    font-size: 2rem;
+    /* font-size: 6vw; */
     padding-right: 4px;
   }
 }
