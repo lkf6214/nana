@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.28d4153b.css",
-    "main.js": "/static/js/main.c3ffdc71.js",
+    "main.css": "/static/css/main.8e2c6fc9.css",
+    "main.js": "/static/js/main.9df14a54.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/bg2.png": "/static/media/bg2.9fc61068b55fd315d6e2.png",
     "static/media/Kismet-Regular.woff": "/static/media/Kismet-Regular.5da22079d3ff3d8f4990.woff",
@@ -10,12 +10,12 @@
     "static/media/Motorcycle-Bold.woff": "/static/media/Motorcycle-Bold.2a9651f555242049e756.woff",
     "static/media/HelveticaNeueLTStd-Roman.woff": "/static/media/HelveticaNeueLTStd-Roman.6e3d231f6930eafba3b0.woff",
     "index.html": "/index.html",
-    "main.28d4153b.css.map": "/static/css/main.28d4153b.css.map",
-    "main.c3ffdc71.js.map": "/static/js/main.c3ffdc71.js.map",
+    "main.8e2c6fc9.css.map": "/static/css/main.8e2c6fc9.css.map",
+    "main.9df14a54.js.map": "/static/js/main.9df14a54.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.28d4153b.css",
-    "static/js/main.c3ffdc71.js"
+    "static/css/main.8e2c6fc9.css",
+    "static/js/main.9df14a54.js"
   ]
 }
