@@ -60,9 +60,13 @@ const ArrayMap = ({ photos, descriptionColor = "black" }) => {
             ) : (
               <video
                 width={"500px"}
-                muted
+                // muted
                 // preload
-                autoPlay
+                // autoPlay
+                // playsinline
+                muted
+                loop
+                autoplay
                 playsinline
                 controls
                 controlsList={"nodownload"}
@@ -102,11 +106,15 @@ const ArrayMap = ({ photos, descriptionColor = "black" }) => {
               <video
                 width={"500px"}
                 controls
-                autoPlay
-                muted
-                playsinline
+                // autoPlay
+                // muted
+                // playsinline
                 // loop
                 // preload
+                muted
+                loop
+                autoplay
+                playsinline
                 controlsList={"nodownload"}
                 // className="modal-image"
               >
