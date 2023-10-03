@@ -27,6 +27,7 @@
   width: auto;
   height: fit-content;
   margin-right: 10px;
+  cursor: pointer;
   /* text-align: center; */
   /* border: 3px solid blue; */
 }
@@ -50,6 +51,7 @@ p {
   display: flex;
   align-items: center;
   z-index: 999;
+  cursor: pointer;
   /* border: 5px solid purple; */
 }
 
