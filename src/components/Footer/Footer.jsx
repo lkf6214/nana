@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Footer.css";
 import { Link, useLocation } from "react-router-dom";
 import RollingSlide from "./RollingSlide";
-import Ganzi from "../Ganzi";
+// import Ganzi from "../Ganzi";
 
 export default function Footer() {
   // 새로고침시 유지
@@ -21,7 +21,7 @@ export default function Footer() {
     );
   };
 
-  const text = "CONNECT +82)10 3374 3102 NANDRAWING@GMAIL.COM";
+  const text = "CONNECT +82)10 3374 3102 NEURONET999@GMAIL.COM";
   const [activeTab, setActiveTab] = useState("");
 
   useEffect(() => {

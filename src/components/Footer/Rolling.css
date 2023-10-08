@@ -1,8 +1,10 @@
 .flow-wrap {
   position: relative;
-  max-width: 400px;
+  /* max-width: 400px; */
+  max-width: 25vw;
   width: 100%;
   height: 100%;
+  margin-right: 2vw;
 }
 
 @media screen and (max-width: 1000px) {
@@ -10,6 +12,14 @@
     position: relative;
     max-width: 1000px;
     width: calc(100vw - 10px);
+  }
+
+  .flow div {
+    animation: loop 5s linear infinite;
+    font-size: 12px;
+    border-top: dotted 2px gray;
+    margin-right: 2px;
+    /* border: 1px solid red; */
   }
 }
 
@@ -108,6 +118,9 @@
   animation: loop 5s linear infinite;
   line-height: 35px;
   padding-right: 1rem;
+
+  /* padding-bottom: 1rem; */
+  /* font-size: 9px; */
   /* 박스 높이 키워줌 */
 }
 @keyframes loop {

@@ -1,11 +1,12 @@
 .fixComment {
-  width: 80vw;
-  max-width: 500px;
+  width: 25vw;
+  /* max-width: 500px; */
+  /* min-width: 300px; */
   position: fixed;
   top: 1rem;
   left: 1rem;
   z-index: 1;
-  font-size: 2rem;
+  font-size: 1.4vw;
   /* border: 1px solid red; */
 }
 
@@ -20,21 +21,26 @@
 }
 
 .fixComment .fixComment_header {
-  font-size: 3rem;
-  /* vertical-align: bottom; */
+  font-size: 3vw;
+  vertical-align: bottom;
   padding-right: 8px;
+  /* border: 1px solid red; */
+  /* margin-bottom: 6px; */
 }
 
 @media screen and (max-width: 1000px) {
   .fixComment {
+    width: 80vw;
     max-width: 300px;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+    font-size: 1rem;
     /* font-size: 4vw; */
+    line-height: 20px;
   }
 
   .fixComment .fixComment_header {
     font-size: 2rem;
     /* font-size: 6vw; */
-    padding-right: 4px;
+    padding-right: 6px;
   }
 }

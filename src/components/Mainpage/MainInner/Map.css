@@ -28,18 +28,23 @@
   height: fit-content;
   margin-right: 10px;
   cursor: pointer;
+  /* width: 25vw; */
   /* text-align: center; */
   /* border: 3px solid blue; */
+  white-space: wrap;
 }
 
 .image {
   /* width: 100vw; */
-  width: 500px;
+  /* width: 500px; */
+  width: 25vw;
 }
 
 p {
   text-align: left;
   font-size: 0.8rem;
+  /* width: 25vw; */
+  /* border: 3px solid blue; */
 }
 
 .modal-overlay {
@@ -105,11 +110,16 @@ p {
 
   .card p {
     white-space: normal;
+    font-size: 12px;
   }
 
   .modal-overlay .modal-content video {
     width: 95vw;
     /* border: 3px solid red; */
     /* padding-bottom: 8px; */
+  }
+
+  .container .scroll-container .card p {
+    /* font-size: 5px; */
   }
 }
