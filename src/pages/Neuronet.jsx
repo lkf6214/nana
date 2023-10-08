@@ -55,6 +55,11 @@ export default function Neuronet() {
       description: "Foundation : Neuronet Project Teaser ⚡",
     },
     {
+      src: process.env.PUBLIC_URL + "/img/Neuronet/20.gif",
+      alt: "Neuronet 20",
+      description: "Personal Work : Brand For Bitches Company Butterfly Bag 🦋",
+    },
+    {
       src: process.env.PUBLIC_URL + "/img/Neuronet/09.gif",
       alt: "Neuronet 09",
       description: "Foundation : ID CARD Sries 💳",

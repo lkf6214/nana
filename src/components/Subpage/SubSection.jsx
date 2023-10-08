@@ -62,11 +62,11 @@ export default function SubSection() {
       description:
         "Ememelge 2021S/S Smiley® Collab : Collaboration Graphic with Smiley 😀 of Mmlg make the world happy place.",
     },
-    {
-      src: process.env.PUBLIC_URL + "/img/VisualDesign/09.png",
-      alt: "Visual Design 09",
-      description: "Ulmagram Design 2023 :  Ulmagram Application Logo Design",
-    },
+    // {
+    //   src: process.env.PUBLIC_URL + "/img/VisualDesign/09.png",
+    //   alt: "Visual Design 09",
+    //   description: "Ulmagram Design 2023 :  Ulmagram Application Logo Design",
+    // },
     {
       src: process.env.PUBLIC_URL + "/img/VisualDesign/10.jpg",
       alt: "Visual Design 10",
@@ -79,11 +79,11 @@ export default function SubSection() {
       description:
         "Ememelge 2018 F/W Season : Ememlge🔴Customer🔴Service🔴Graphic🔴Design.",
     },
-    {
-      src: process.env.PUBLIC_URL + "/img/VisualDesign/12.gif",
-      alt: "Visual Design 12",
-      description: "Personal Work : Brand For Bitches Company Butterfly Bag 🦋",
-    },
+    // {
+    //   src: process.env.PUBLIC_URL + "/img/VisualDesign/12.gif",
+    //   alt: "Visual Design 12",
+    //   description: "Personal Work : Brand For Bitches Company Butterfly Bag 🦋",
+    // },
     {
       src: process.env.PUBLIC_URL + "/img/VisualDesign/13.gif",
       alt: "Visual Design 13",
@@ -155,40 +155,39 @@ export default function SubSection() {
       description:
         "Lolyloveloly 2022 Hot Summer Season : Lookbook Film Scan 🎞🎞🎞 Whole Body and Cap Shoot Ver. ",
     },
+    // {
+    //   src: process.env.PUBLIC_URL + "/img/VisualDesign/25.png",
+    //   alt: "Visual Design 25",
+    //   description:
+    //     "Lolyloveloly 2022 Hot Summer Season : 2D Character Compose SNS Contents👯",
+    // },
     {
-      src: process.env.PUBLIC_URL + "/img/VisualDesign/25.png",
-      alt: "Visual Design 25",
-      description:
-        "Lolyloveloly 2022 Hot Summer Season : 2D Character Compose SNS Contents👯",
-    },
-
-    {
-      src: process.env.PUBLIC_URL + "/img/VisualDesign/26.gif",
+      src: process.env.PUBLIC_URL + "/img/VisualDesign/26.png",
       alt: "Visual Design 26",
       description:
         "Ememelge 2021 Hot Summer : Rotary Graphic Line Green Logo Transform 🌳🍀🌲🌿🌳",
     },
     {
-      src: process.env.PUBLIC_URL + "/img/VisualDesign/27.png",
+      src: process.env.PUBLIC_URL + "/img/VisualDesign/27.gif",
       alt: "Visual Design 27",
       description:
         "Lolyloveloly 2021 F/W Season : Graphic Design and Plan🧥👚👗👙👛🩱👠",
     },
 
     {
-      src: process.env.PUBLIC_URL + "/img/Illustration/28.jpg",
+      src: process.env.PUBLIC_URL + "/img/VisualDesign/28.gif",
       alt: "Illustration 28",
       description:
         "Ememelge 2021 S/S 1st Delivery : “Wegocamp” Half T-shirt & Grapic Design.",
     },
     {
-      src: process.env.PUBLIC_URL + "/img/Illustration/29.jpg",
+      src: process.env.PUBLIC_URL + "/img/VisualDesign/29.jpg",
       alt: "Illustration 29",
       description:
         "Lolyloveloly 2022 Hot Summer Season : 3D Photo Compose SNS Contents👯",
     },
     {
-      src: process.env.PUBLIC_URL + "/img/Illustration/30.jpg",
+      src: process.env.PUBLIC_URL + "/img/VisualDesign/30.mp4",
       alt: "Illustration 30",
       description:
         "Ememelge 21 F/W Season : Full Duvet Travel Season Pre-order Previwe✌",
@@ -204,12 +203,12 @@ export default function SubSection() {
       description:
         "Lolyloveloly 2023 F/W Season Logo Transform and Season Graphic🌹🌹🌹",
     },
-    {
-      src: process.env.PUBLIC_URL + "/img/VisualDesign/33.png",
-      alt: "Visual Design 33",
-      description:
-        "Lolyloveloly 2022 Hot Summer Season : Starwave Longsleeve Pattern Design ★·.··.·★",
-    },
+    // {
+    //   src: process.env.PUBLIC_URL + "/img/VisualDesign/33.png",
+    //   alt: "Visual Design 33",
+    //   description:
+    //     "Lolyloveloly 2022 Hot Summer Season : Starwave Longsleeve Pattern Design ★·.··.·★",
+    // },
     {
       src: process.env.PUBLIC_URL + "/img/VisualDesign/34.gif",
       alt: "Visual Design 34",
@@ -258,22 +257,22 @@ export default function SubSection() {
       alt: "Visual Design 41",
       description: "Lolyloveloly 2021 F/W Season : Shooting Plan🤳💥📷📸",
     },
-    {
-      src: process.env.PUBLIC_URL + "/img/VisualDesign/42.gif",
-      alt: "Visual Design 42",
-      description: "Modeling 2023 Equipment 3D Modeling Design🔩🔩",
-    },
+    // {
+    //   src: process.env.PUBLIC_URL + "/img/VisualDesign/42.gif",
+    //   alt: "Visual Design 42",
+    //   description: "Modeling 2023 Equipment 3D Modeling Design🔩🔩",
+    // },
     {
       src: process.env.PUBLIC_URL + "/img/VisualDesign/43.gif",
       alt: "Visual Design 43",
       description:
         "87MM Label Ones Service 2020 : 87MM lable ones service 🌐 tarpaulin bag and graphic tag design.",
     },
-    {
-      src: process.env.PUBLIC_URL + "/img/VisualDesign/44.png",
-      alt: "Visual Design 44",
-      description: "Lolyloveloly Logo : CI Logo Graphic Design 🧚❣❤🖤",
-    },
+    // {
+    //   src: process.env.PUBLIC_URL + "/img/VisualDesign/44.png",
+    //   alt: "Visual Design 44",
+    //   description: "Lolyloveloly Logo : CI Logo Graphic Design 🧚❣❤🖤",
+    // },
   ];
 
   const fixCommentHeaderFont = "visualDesign";
