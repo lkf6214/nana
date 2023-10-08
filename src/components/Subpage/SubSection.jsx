@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import "./SubSection.css";
 import ArrayMap from "../Mainpage/MainInner/ArrayMap";
 import Comment from "../Comment";
-import Ganzi from "../../components/Ganzi";
+// import Ganzi from "../../components/Ganzi";
 
 export default function SubSection() {
   const photos = [
@@ -290,7 +290,7 @@ export default function SubSection() {
 
   return (
     <>
-      <Ganzi ganzi={ganzi} />
+      {/* <Ganzi ganzi={ganzi} /> */}
       {loading ? null : (
         <section className="section_sub">
           {/* <Footer /> */}

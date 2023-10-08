@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ArrayMap from "../components/Mainpage/MainInner/ArrayMap";
 import Comment from "../components/Comment";
-import Ganzi from "../components/Ganzi";
+// import Ganzi from "../components/Ganzi";
 
 export default function Neuronet() {
   const photos = [
@@ -137,7 +137,7 @@ export default function Neuronet() {
 
   return (
     <>
-      <Ganzi ganzi={ganzi} />
+      {/* <Ganzi ganzi={ganzi} /> */}
 
       {loading ? null : (
         <section className="section_neuronet ">

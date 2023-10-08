@@ -5,7 +5,7 @@ import Picture from "./MainInner/Picture";
 import Sticker from "./MainInner/Sticker";
 import ArrayMap from "./MainInner/ArrayMap";
 import Comment from "../Comment";
-import Ganzi from "../../components/Ganzi";
+// import Ganzi from "../../components/Ganzi";
 
 // import ImageGallery from "./ImageGallery";
 // import Gallery from "./Gallery";
@@ -190,7 +190,7 @@ export default function MainSections() {
 
   return (
     <>
-      <Ganzi ganzi={ganzi} />
+      {/* <Ganzi ganzi={ganzi} /> */}
 
       {loading ? null : (
         <section>
